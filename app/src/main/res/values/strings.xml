@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SearchGithubUser</string>
+    <string name="no_data_available">No data available</string>
+    <string name="search_here">Search here</string>
+    <string name="lbl_empty_result">No data available.</string>
+    <string name="Oops">Ooops!</string>
+    <string name="error">Something went wrong. Pleas try again.</string>
+    <string name="try_again">Try Again</string>
+</resources>
