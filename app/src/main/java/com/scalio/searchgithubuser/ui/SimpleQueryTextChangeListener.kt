@@ -10,7 +10,7 @@ class SimpleQueryTextChangeListener(private val search: (String) -> Unit) : Sear
     }
 
     override fun onQueryTextChange(query: String?): Boolean {
-        query?.let { search(it) } 
+        query?.let { search(it) }
         return true
     }
 

@@ -23,8 +23,8 @@ class UserAdapter : PagingDataAdapter<User, UserAdapter.UserViewHolder>(UserDiff
     class UserViewHolder(private val view: ItemUserBinding) : RecyclerView.ViewHolder(view.root) {
         fun bind(user: User?) {
             with(view) {
-                name.text = user?.login
-                type.text = user?.type
+                name.text = user?.login ?: ""
+                type.text = user?.type ?: ""
                 dp.load(user?.url)
             }
         }

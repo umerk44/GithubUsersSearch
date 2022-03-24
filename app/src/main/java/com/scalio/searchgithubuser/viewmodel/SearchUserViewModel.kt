@@ -20,9 +20,9 @@ class SearchUserViewModel @Inject constructor(private val userRepository: Search
 
     private val getUserLiveData: MutableLiveData<Resource<PagingData<User>>> = MutableLiveData()
 
-    fun observeUserRepositoriesLiveData(): LiveData<Resource<PagingData<User>>> = getUserLiveData
+    fun observeUserLiveData(): LiveData<Resource<PagingData<User>>> = getUserLiveData
 
-    fun searchRepositoriesBy(query: String) {
+    fun searchUsers(query: String) {
         getUserLiveData.value = Resource(null, Resource.Status.Loading)
         dispose.addAll(
             userRepository.getUsers(query)

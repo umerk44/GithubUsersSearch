@@ -2,16 +2,22 @@
     <!-- Base application theme. -->
     <style name="Theme.SearchGithubUser" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryVariant">@color/primaryDark</item>
-        <item name="colorOnPrimary">@color/primary</item>
-       <!-- &lt;!&ndash; Secondary brand color. &ndash;&gt;
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>-->
+        <item name="colorOnSecondary">@color/black</item>
+
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">@android:color/darker_gray</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.SearchGithubUser.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="SearchAutoCompleteTextView">
@@ -21,4 +27,8 @@
         <item name="android:textSize">16sp</item>
         <item name="fontFamily">@font/nunito_regular</item>
     </style>
+
+    <style name="Theme.SearchGithubUser.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SearchGithubUser.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

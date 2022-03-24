@@ -6,4 +6,6 @@
     <string name="Oops">Ooops!</string>
     <string name="error">Something went wrong. Pleas try again.</string>
     <string name="try_again">Try Again</string>
+    <string name="searchuser">Search User</string>
+    <string name="github_user">GitHub Users</string>
 </resources>

@@ -14,7 +14,8 @@
         android:theme="@style/Theme.SearchGithubUser">
         <activity android:name=".ui.MainActivity"
             android:screenOrientation="portrait"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.SearchGithubUser.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
