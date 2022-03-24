@@ -1,8 +1,6 @@
 package com.scalio.searchgithubuser.data.repository
 
 import androidx.paging.PagingData
-import androidx.paging.map
-import com.scalio.searchgithubuser.core.toUser
 import com.scalio.searchgithubuser.data.remote.SearchUserRemote
 import com.scalio.searchgithubuser.model.User
 import io.reactivex.Flowable
@@ -14,9 +12,7 @@ class SearchUserRepositoryImpl @Inject constructor(private val searchUserRemote:
         return when {
             query.isNotEmpty() -> {
                 searchUserRemote.searchUser(query)
-                    .map { data -> data.map { it.toUser() } }
                     .map { data -> Resource(data, Resource.Status.Success) }
-                    .startWith(Resource(null, Resource.Status.Loading))
             }
             else -> Flowable.just(Resource(PagingData.empty(), Resource.Status.Success))
         }
