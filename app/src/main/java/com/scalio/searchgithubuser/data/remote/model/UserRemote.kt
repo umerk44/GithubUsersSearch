@@ -6,9 +6,9 @@ data class UserRemote(
     @SerializedName("id")
     val id: Long,
     @SerializedName("avatar_url")
-    val url: String,
+    val url: String?,
     @SerializedName("login")
-    val login: String,
+    val login: String?,
     @SerializedName("type")
-    val type: String
+    val type: String?
 )
