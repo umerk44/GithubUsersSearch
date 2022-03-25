@@ -26,7 +26,6 @@
             android:elevation="10dp"
             android:padding="12dp">
 
-
             <ImageView
                 android:id="@+id/dp"
                 android:layout_width="80dp"
@@ -40,11 +39,7 @@
                 android:id="@+id/name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
                 android:layout_marginStart="4dp"
-                android:layout_toEndOf="@id/dp"
-                android:layout_toRightOf="@id/dp"
                 android:fontFamily="@font/nunito_bold"
                 android:maxLines="1"
                 android:textColor="@color/textHeadline"
@@ -58,11 +53,7 @@
                 android:id="@+id/type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
                 android:layout_marginStart="4dp"
-                android:layout_toEndOf="@id/dp"
-                android:layout_toRightOf="@id/dp"
                 android:fontFamily="@font/nunito_regular"
                 android:textColor="@color/textBody"
                 android:maxLines="1"
