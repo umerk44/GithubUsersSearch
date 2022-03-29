@@ -27,7 +27,7 @@ android {
         }
         debug {
             minifyEnabled false
-            buildConfigField("String", "ACCESS_TOKEN", "\"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\"")
+            buildConfigField("String", "ACCESS_TOKEN", "\"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\"")
             it.buildConfigField("String", "BASE_URL", "\"https://api.github.com/\"")
         }
     }
@@ -71,7 +71,6 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
     implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
 
-    //glide
     implementation "com.github.bumptech.glide:glide:$glide_version"
     kapt "com.github.bumptech.glide:compiler:$glide_version"
 
